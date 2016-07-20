@@ -1,0 +1,45 @@
+@font-face{
+    font-family: "Kingthings";
+    src: url("../fonts/Kingthings_Foundation.ttf") format('truetype');
+}
+@font-face{
+    font-family: "GreatVibes";
+    src: url("../fonts/GreatVibes-Regular.otf");
+}
+body {
+    background-image: url("../pictures/pizza-1442946_1920.jpg")
+}
+.logo {
+    max-width: 30%;
+}
+nav ul {
+    background-color: #eee;
+    border-radius: 4px;
+}
+.jumbotron h1 {
+    font-family: Kingthings;
+}
+.jumbotron h2 {
+    font-family: GreatVibes;
+}
+.jumbotron {
+    background-color: #fff;
+}
+footer {
+    background-color: #fff;
+    border-radius: 4px;
+}
+footer p {
+    padding: 0 4px;
+}
+#firstSet label {
+    width: 30%;
+    text-align: right;
+}
+#firstSet select {
+    width: 174px;
+}
+.crustSelect {
+    max-width: 25%;
+    padding: 5px;
+}

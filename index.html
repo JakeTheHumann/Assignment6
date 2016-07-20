@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jake's Pizza</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="logo/logoHighRes.jpg" class="logo" /> 
+      </div>
+
+      <div class="jumbotron">
+        <h1>Jake's Pizza</h1>
+        <h2>Your Favorite One</h2>
+        <p class="lead"></p>
+      </div>
+       
+       
+       
+       
+       
+       <div class="jumbotron">
+       <form action="/my-handling-form-page" method="post">
+           <fieldset id="firstSet">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+            </div>
+            <div>
+                <label for="addressType">Address type:</label>
+                <select name="addressType" id="addressType">
+                  <option value="house">House</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="business">Business</option>
+                  <option value="campus">Campus</option>
+                  <option value="hotel">Hotel</option>
+                  <option value="dorm">Dorm</option>
+                  <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="divOtherAddress" style="display: none">
+                <label for="otherAddress">Address type:</label>
+                <input type="text" id="otherAddress" name="otherAddress" />
+            </div>
+            <div>
+                <label for="street">Street address:</label>
+                <input type="text" id="street" name="street" />
+            </div>
+            <div>
+                <label for="apt">Appartment number:</label>
+                <input type="text" id="apt" name="apt" />
+            </div>
+            <div>
+                <label for="mail">City:</label>
+                <input type="text" id="email" name="email" />
+            </div>
+            <div>
+                <label for="name">State:</label>
+                <input type="text" id="name" name="name" />
+            </div><div>
+                <label for="zip">Zip code:</label>
+                <input type="text" id="zip" name="zip" />
+            </div>
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="text" id="phone" name="phone" value="(123) 456-7890"/>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+            </div>
+           </fieldset>
+           <h3>Build your order:</h3>
+           <fieldset>
+            <div>
+                <label for='crust'>Choose your dough:</label><br />
+                <span class="crustSelect"><input type="radio" name="crust" value="handTossed">Hand Tossed</span>
+                <span class="crustSelect"><input type="radio" name="crust" value="thinCrust">Thin Crust</span>
+                <span class="crustSelect"><input type="radio" name="crust" value="newYorkStyle">New York Style</span>
+                <span class="crustSelect"><input type="radio" name="crust" value="glutenFree">Gluten Free</span>
+            </div>
+            
+            
+            <div>
+                <label for="size">Pick a size:</label>
+                <select name="size" id="size">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+            </div>
+            <div>
+                <label for="cheese">How much cheese do you want?</label>
+                <select name="cheese" id="cheese">
+                  <option value="light">Light: no charge</option>
+                  <option value="normal" selected>Normal: no charge</option>
+                  <option value="extra">Extra: +$2.99</option>
+                  <option value="double">Double: +$3.99</option>
+                </select>
+            </div>
+            <div>
+                <label for="sause">Pick a sause:</label>
+                <select name="sause" id="sause">
+                  <option value="regular">Regular Tomato: no charge</option>
+                  <option value="hearty">Hearty Tomato: +$.99</option>
+                  <option value="bbq">BBQ Sauce: +$1.99</option>
+                </select>
+            </div>
+            <div>
+                <label for="toppings">Add some toppings</label><br />
+                <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br />
+                <input type="checkbox" name="toppings" value="sausage">Sausage<br />
+                <input type="checkbox" name="toppings" value="ham">Ham<br />
+                <input type="checkbox" name="toppings" value="bacon">Bacon<br />
+                <input type="checkbox" name="toppings" value="salami">Salami<br />
+                <input type="checkbox" name="toppings" value="peppers">Peppers<br />
+                <input type="checkbox" name="toppings" value="olives">Olives<br />
+                <input type="checkbox" name="toppings" value="jalapenos">Jalapenos<br />
+                <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br />
+                <input type="checkbox" name="toppings" value="pineapple">Pineapple<br />
+                <input type="checkbox" name="toppings" value="onion">Onion<br />
+            </div>
+               
+               
+           
+           </fieldset>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </form>
+       
+       
+       
+        </div>
+        
+      
+      
+      
+        
+
+      <footer class="footer">
+        <p>&copy; 2015 Company, Inc.</p>
+      </footer>
+<script type="text/javascript" src="js/main.js"></script>
+    </div> <!-- /container -->
+  </body>
+</html>
